@@ -1,0 +1,47 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  @apply bg-earth-50 text-leaf-900 antialiased;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'ss01';
+}
+*:focus-visible {
+  @apply outline-none ring-2 ring-leaf-500 ring-offset-2 ring-offset-white;
+}
+/* Thin, unobtrusive scrollbars for dense research tables and panels */
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-earth-300;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.leaflet-container {
+  font-family: 'Inter', sans-serif;
+  z-index: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
