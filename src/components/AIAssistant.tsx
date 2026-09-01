@@ -10,7 +10,7 @@ interface Message {
 }
 
 const INTRO =
-'I am AgriAI, an AI advisory assistant for this research platform. I can explain the demo predictions on your dashboard. I am not a replacement for professional agricultural advice — confirm any field action with an agricultural officer.';
+'I am AgriAI, an AI advisory assistant for AgriGuard AI. I can explain the demo predictions on your dashboard. I am not a replacement for professional agricultural advice — confirm any field action with an agricultural officer.';
 
 /** Floating advisory assistant. Answers are drawn from the mock knowledge base. */
 export function AIAssistant() {

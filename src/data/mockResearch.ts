@@ -1,7 +1,6 @@
 import type { TeamMember } from '../types';
 
 export const researchProject = {
-  id: 'J26-IT-420',
   title: 'AgriGuard AI Platform for Minimizing Post-Harvest Crop Losses',
   area: 'Artificial Intelligence / AgriGuard AI',
   module: 'IT4010 — Research Project',

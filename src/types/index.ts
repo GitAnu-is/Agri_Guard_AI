@@ -1,5 +1,5 @@
 /**
- * Shared domain types for the AI-Powered Smart Agriculture Platform (J26-IT-420).
+ * Shared domain types for the AgriGuard AI platform.
  * All values produced by the mock services are sample/demo data.
  */
 
